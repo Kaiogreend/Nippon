@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,26 +18,29 @@
            
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-       
-          <li class="nav-item">
-            <a class="nav-link" href="#home" ><img src="../images/icon_nippon.png" alt="" height="30px" width="30px"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section1">serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section2" ><i class="bi bi-geo-alt"></i>Local</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section3">sobre</a>
-          </li>
-        </ul>
+  <div class="fixed-top">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav   ">
+      <a href="#home" class="active"><img src="../images/icon_nippon.png" alt="" height="25px"></a>
+      
+      <div >
+        <a href="#section1">Serviços</a>
+        <a href="#section2">Local</a>
+        <a href="#section3">Sobre</a>
       </div>
-    </nav>
+      <div id="myLinks" >
+        <a href="#section1"><i class="bi bi-whatsapp"> (19) 9 8445 1700 </i></a>
+        <a href="#section2"><i class="bi bi-envelope"  ></i> nippon@gmail.com</a>
+       
+      </div>
+        
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="bi bi-list"></i>
+      </a>
+    </div>
     
+  </div>
 
 
 <br>
@@ -59,7 +63,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../images/Tubos-de-aço-galvanizados-Tubos-Oliveira.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-    </div>
+    </div> 
     <div class="carousel-item">
       <img src="../images/288698-descubra-7-ferramentas-para-soldador-que-voce-deve-ter-1280x640-1-1.jpg" alt="Chicago" class="d-block" style="width:100%">
     </div>
@@ -88,12 +92,12 @@
        <div class="container-fluid">
         <div class="row">
           <div class="col-sm  text-black"> 
-            <div class="container mt-3">
+            <div class="container mt-4">
                 <h2>Card Image</h2> 
 
                 <p>Image at the top (card-img-top):</p>
-                <div class="card" style="width:200px;">
-                  <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
+                <div class="card container-fluid" >
+                  <img class="card-img-top img-fluid" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
                   <div class="card-body">
                     <h4 class="card-title">John Doe</h4>
                     <a href="#" class="btn btn-primary">See Profile</a>
@@ -102,11 +106,11 @@
         </div>
           </div>
           <div class="col-sm  text-black">
-            <div class="container mt-3">
+            <div class="container mt-4">
                 <h2>Card Image</h2>
                 <p>Image at the top (card-img-top):</p>
-                <div class="card" style="width:200px;">
-                  <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
+                <div class="card container-fluid" >
+                  <img class="card-img-top img-fluid" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
                   <div class="card-body">
                     <h4 class="card-title">John Doe</h4>
                     <a href="#" class="btn btn-primary">See Profile</a>
@@ -115,11 +119,11 @@
         </div>
           </div>
           <div class="col-sm  text-black">
-            <div class="container mt-3">
+            <div class="container mt-4">
                 <h2>Card Image</h2>
                 <p>Image at the top (card-img-top):</p>
-                <div class="card" style="width:200px;">
-                  <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
+                <div class="card container-fluid" >
+                  <img class="card-img-top img-fluid" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
                   <div class="card-body">
                     <h4 class="card-title">John Doe</h4>
                     <a href="#" class="btn btn-primary">See Profile</a>
@@ -127,18 +131,7 @@
                 </div>
         </div>
           </div>
-          <div class="col-sm  text-black"> <div class="container mt-3">
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-            <div class="card" style="width:200px;">
-              <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:1auto">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-        </div>
-    </div>
+          
         </div>  
       </div>
 
@@ -148,11 +141,11 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-sm  text-black">
-            <div class="container mt-3">
+            <div class="container mt-4">
                 <h2>Card Image</h2>
                 <p>Image at the top (card-img-top):</p>
-                <div class="card" style="width:200px;">
-                  <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:1auto">
+                <div class="card container-fluid" >
+                  <img class="card-img-top img-fluid" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:1auto">
                   <div class="card-body">
                     <h4 class="card-title">John Doe</h4>
                     <a href="#" class="btn btn-primary">See Profile</a>
@@ -161,11 +154,11 @@
         </div>
           </div>
           <div class="col-sm  text-black">
-            <div class="container mt-3">
+            <div class="container mt-4">
                 <h2>Card Image</h2>
                 <p>Image at the top (card-img-top):</p>
-                <div class="card" style="width:200px;">
-                  <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
+                <div class="card container-fluid" >
+                  <img class="card-img-top img-fluid" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
                   <div class="card-body">
                     <h4 class="card-title">John Doe</h4>
                     <a href="#" class="btn btn-primary">See Profile</a>
@@ -174,11 +167,11 @@
         </div>
           </div>
           <div class="col-sm  text-black">
-            <div class="container mt-3">
+            <div class="container mt-4">
                 <h2>Card Image</h2>
                 <p>Image at the top (card-img-top):</p>
-                <div class="card" style="width:200px;">
-                  <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
+                <div class="card container-fluid" >
+                  <img class="card-img-top img-fluid" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
                   <div class="card-body">
                     <h4 class="card-title">John Doe</h4>
                     <a href="#" class="btn btn-primary">See Profile</a>
@@ -186,18 +179,6 @@
                 </div>
         </div>
           </div>
-          <div class="col-sm  text-black"> <div class="container mt-3">
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-            <div class="card" style="width:200px;">
-              <img class="card-img-top" src="../images/slide-de-metal-phx-5cm-para-guitarra_1_.png" alt="Card image" style="width:auto">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-        </div>
-    </div>
         </div>  
       </div>
     </div>
@@ -222,5 +203,18 @@
       <p>Lorem ipsum dolor sit amet. 33 itaque ipsa non debitis dolor qui fugit omnis et iste quisquam aut obcaecati perspiciatis eum atque ipsum. Et nobis molestiae aut natus quasi a  quae sit quae libero et corporis officiis. Eum tenetur quia ut quas dolorum sed corrupti atque a consequatur nostrum qui sunt facere qui quidem illo? </p><p>Est voluptate tenetur nam architecto suscipit in incidunt commodi. Est consectetur inventore sit debitis nemo et fugit nisi ex velit dolorem. Id modi porro qui obcaecati exercitationem qui odit quia ut quia eius. </p><p>Eos rerum quisquam cum voluptatem accusantium aut unde internos est consectetur explicabo. Ut repellat delectus sit autem quidem sed officia rerum et voluptatem dolorem. Eos maiores delectus non pariatur ducimus id natus dolorum sit molestias voluptatem aut alias doloribus. </p>
         </div>
     
+
+
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          </script>
+          
     </body>
     </html>
